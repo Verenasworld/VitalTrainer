@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="" xmlns="http://www.w3.org/1999/html">
+<html class="no-js" lang="" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta charset="utf-8">
@@ -9,11 +9,11 @@
 
     <link rel="stylesheet" href="css/main.css" media="screen">
 
+
     <script src="https://kit.fontawesome.com/eecbc08072.js"></script>
 </head>
 
 <body>
-<div></div>
 <div id="page-wrapper">
     <header id="header">
         <div class="logo">
@@ -28,6 +28,7 @@
                 <li><a class="nav-link" href="#about">About </a></li>
                 <li><a class="nav-link" href="#workout">Workout</a></li>
                 <li><a class="nav-link" href="#pricing">Pricing</a></li>
+                <li><a class="nav-link" href="#bmi"></li>BMI Rechner</a></li>
             </ul>
         </nav>
     </header>
@@ -99,13 +100,14 @@
                      </span>
                 </div>
 
-            <div class="desc">
-                <h2>Qualitytime</h2>
-                <p>
-                    Do something good for me and my body and find joy in more mobility and relaxation for a vital and
-                    healthy lifestyle
-                </p>
-            </div>
+                <div class="desc">
+                    <h2>Qualitytime</h2>
+                    <p>
+                        Do something good for me and my body and find joy in more mobility and relaxation for a vital
+                        and
+                        healthy lifestyle
+                    </p>
+                </div>
             </div>
         </section>
         <section id="how-it-works">
@@ -119,7 +121,7 @@
                 <h2>€350</h2>
                 <ol>
                     <li>8 X Personal Training</li>
-                      <li>Allgemeine Fitness</li>
+                    <li>Allgemeine Fitness</li>
                     <li>Cardio Basic Training</li>
                     <li>Fitness Check</li>
                 </ol>
@@ -130,9 +132,9 @@
                 <h2>€500</h2>
                 <ol>
                     <li>10 x Personal Training</li>
-                    <li>Pdf Plan </li>
-                    <li> Workout Video </li>
-                    <li> Fitness Check </li>
+                    <li>Pdf Plan</li>
+                    <li> Workout Video</li>
+                    <li> Fitness Check</li>
                 </ol>
                 <button class="btn">Select</button>
             </div>
@@ -142,13 +144,29 @@
                 <ol>
                     <li>18X Personal Training</li>
                     <li>Foodplan</li>
-                    <li>Workout Pdf </li>
-                    <li>Workout Video </li>
+                    <li>Workout Pdf</li>
+                    <li>Workout Video</li>
                 </ol>
                 <button class="btn">Select</button>
             </div>
         </section>
+        <form class="bmi-calculator">
+            <h3>BMI - Rechner</h3>
 
+            <br />
+            <div class="bmi">
+                <label for="height">Körpergröße in m:</label>
+                <input type="text" id="height" name="height" />
+
+
+                <label for="weight">Gewicht in kg:</label>
+                <input type="text" id="weight" name="weight" />
+
+                <br />
+            </div>
+            <!--            <button id="calculate">BMI berechnen</button>-->
+            <div id="bmiresult">Dein BMI ist: <span id="result">XXX</span></div>
+        </form>
     </div>
     <footer>
         <ul>
@@ -161,6 +179,6 @@
 
 
 </div>
-
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
