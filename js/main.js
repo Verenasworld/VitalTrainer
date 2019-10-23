@@ -26,4 +26,4 @@
     weightObj.addEventListener("keyup", calculateBmi);
 
 
-//TODO BMI und Nav verlinken das Nav zu BMI springt  ! BMI rechnet nicht !
+//TODO BMI und Nav verlinken das Nav zu BMI springt  !
