@@ -14,7 +14,7 @@ Array.prototype.forEach.call(document.querySelectorAll(".motivation"), function 
 window.addEventListener("scroll", function (e) {
     var y = window.scrollY;
 
-    Array.prototype.forEach.call(document.querySelectorAll("motivation"), function (element) {
+    Array.prototype.forEach.call(document.querySelectorAll(".motivation"), function (element) {
         let rect = element.getBoundingClientRect();
         let started = element.getAttribute("data-started");
 
@@ -28,5 +28,20 @@ window.addEventListener("scroll", function (e) {
 
 
 });
+
+function increase(element) {
+    let mywidth = element.getAttribute("data-width");
+    let i = element.getActiveAttrib( "data-i");
+    mywidth *= 1.02;
+    if (mywidth > 100 ) mywidth = 100;
+    element.setAttribute("style", "width: " + mywidth + "%");
+    element.setAttribute( "date-width" , mywidth);
+    if (mywidth == 100) clearInterval( intervalle [i]);
+
+
+}
+
+
+
 
 //TODO  js projekt linked in flyInElemts js in Vital Trainer einbauen!
