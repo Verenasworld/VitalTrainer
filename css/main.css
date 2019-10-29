@@ -334,7 +334,7 @@ footer > span {
 .bmi-calculator {
     background-color: rgb(255, 255, 255);
     border: 1px solid rgb(150, 150, 150);
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     margin: 100px 100px 100px 100px;
 
@@ -361,6 +361,8 @@ footer > span {
 }
 #bmiresult {
    padding-top: 20px;
+    font-size: 20px;
+    color: #7bbefc;
 }
 
 .kundenstimme{
