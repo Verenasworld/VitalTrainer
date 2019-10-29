@@ -210,8 +210,10 @@ img{
 /*hier soll die icon Boxen enstehen */
 
 #about {
-  margin-top: 100px;
-    margin-bottom: 100px;
+  margin-top: 200px;
+    margin-bottom: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -227,7 +229,7 @@ img{
 /*How it works you tube video bereich */
 
 #how-it-works {
-  margin: 100px 0 100px 0;
+  margin: 200px 0 200px 0;
   display: flex;
   justify-content: center;
 }
@@ -243,7 +245,7 @@ img{
 
 /*Section pricing produkt basic/middel/big level1*/
 #pricing {
-  margin: 150px 0px 150px 0;
+  margin: 200px 100px 200px 100px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -253,6 +255,7 @@ img{
 
 
 .product {
+    background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -267,7 +270,7 @@ img{
 .product > .level {
   background-color: #7bbefc;
   color: white;
-  padding: 15px 0;
+  padding: 20px 0;
   width: 100%;
   text-transform: uppercase;
   font-weight: 700;
@@ -290,6 +293,7 @@ img{
   margin: 15px 0;
   background-color: #1e90ff;
   font-weight: 400;
+    border-radius: 50px;
 }
 
 .product > button:hover {
