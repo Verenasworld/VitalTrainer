@@ -96,15 +96,14 @@ nav > ul {
     justify-content: space-around;
 }
 
-@media (max-width:600px) {
-    nav > ul {
-        flex-direction: column;
+.navi{
         max-height: 0;
         overflow: hidden;
     }
 
 
+
+.show-menu +.navi, .nav-link{
+    max-height: 100rem;
+
 }
-
-
-

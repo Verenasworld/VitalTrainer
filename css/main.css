@@ -221,7 +221,7 @@ img{
 }
 
 @media (max-width: 800px) {
-  #pricing {
+  #pricing{
     flex-direction: column;
   }
   .product {
