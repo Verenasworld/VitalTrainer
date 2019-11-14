@@ -1,5 +1,7 @@
 /*allgmeine Einstellungen */
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,7 +16,7 @@ body{
 }
 
 a {
-  color: #000;
+  color: #AA879E;
   text-decoration: none;
 }
 
@@ -33,7 +35,7 @@ h2{
 }
 
 p{
-    padding: 10px 20px 0px 20px;
+    padding: 10px 20px 0 20px;
 }
 
 
@@ -96,7 +98,7 @@ img{
 
   border: 0;
   margin: 15px 0;
-  background-color: #1e90ff;
+  background-color: #AA879E;
   font-weight: 400;
     border-radius: 50px;
 
@@ -128,10 +130,7 @@ img{
 
 
 #about {
-  margin-top: 200px;
-    margin-bottom: 200px;
-    margin-left: 100px;
-    margin-right: 100px;
+  margin: 200px 100px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -209,9 +208,9 @@ img{
 .product > button {
   border: 0;
   margin: 15px 0;
-  background-color: #1e90ff;
+  background-color: #65bfef;
   font-weight: 400;
-    border-radius: 50px;
+    border-radius: 5px;
 }
 
 .product > button:hover {
