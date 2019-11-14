@@ -247,6 +247,7 @@ footer > ul {
 
   display: flex;
   justify-content: flex-end;
+  color: white;
 }
 
 footer > ul > li {
@@ -259,9 +260,10 @@ footer > span {
   display: flex;
   justify-content: flex-end;
   font-size: 0.8em;
+}
+footer ul a{
   color: white;
 }
-
 
 .kundenstimme{
     background-color: #96c6ea;
