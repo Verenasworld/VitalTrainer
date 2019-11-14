@@ -80,7 +80,7 @@ nav{
     font-size: 1.5rem;
     color: white;
     background-color: #AA879E;
-    padding: 0 1rem;
+
 
 }
 
@@ -120,6 +120,15 @@ nav ul{
 
 }
 
+.nav-item:nth-child(odd){
+    animation: up 1s forwards;
+}
+
+.nav-item:nth-child(even){
+    animation: down 1s forwards;
+}
+
+
 @keyframes up {
     from{
         transform: translateY(-100%);
@@ -132,12 +141,64 @@ to{
 }
 @keyframes down {
     from{
-        transform: translateY(-100%);
+        transform: translateY(100%);
         opacity: 0;
     }
     to{
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .brand{
+        margin: 0 auto;
+        animation: initial;
+        border-radius: 100%;
+        width: 10rem;
+        height: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    header{
+        perspective: 75rem;
+        overflow: hidden;
+    }
+    nav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 30rem;
+        height: 100vh;
+        line-height: initial;
+        flex-direction: column;
+        /*box-shadow: none;*/
+        text-align: center;
+    }
+
+    nav ul{
+        flex-direction: column;
+        margin-top: -5rem;
+    }
+
+    .nav-item:nth-child(n){
+        animation: initial;
+
+    }
+    .nav-link{
+        margin: 2rem 0;
+    }
+    header.open nav{
+        transform: rotate(0);
+    }
+
+    .menu{
+        display: block;
+    }
+    .overlay.open{
+        opacity: 1;
+        transform: scaleX(1);
     }
 }
 
