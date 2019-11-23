@@ -65,6 +65,8 @@ p{
 img{
 
     width: 100%; height: auto ;
+
+
 }
 
 
@@ -132,7 +134,8 @@ img{
 #about {
   margin: 200px 100px;
   display: flex;
-  flex-direction: row;
+  flex-flow: column;
+  /*flex-direction: row;*/
   justify-content: center;
 }
 

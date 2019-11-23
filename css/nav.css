@@ -18,9 +18,9 @@ header{
     position: fixed;
     top: 1rem;
     right: 1rem;
-    background-color: white;
+    /*background-color: white;*/
     z-index: 999;
-    border-radius: 3px;
+    border-radius: 1px;
     cursor: pointer;
     display: none;
 }
@@ -28,8 +28,8 @@ header{
 .bar,.bar::before,.bar::after{
     content: "";
     position: absolute;
-    width: 3rem;
-    height: 1px;
+    width: 2rem;
+    height: 2px;
     background-color: #AA879E;
     top: 0;
     left: 0;
@@ -73,6 +73,9 @@ nav{
     background-color: white;
     box-shadow: 0 .5rem 1rem rgba(0,0,0, .2);
     overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
 }
 
 .brand{
@@ -80,7 +83,7 @@ nav{
     color: white;
     background-color: #AA879E;
     padding: 0 20px 0 20px;
-    box-shadow: 4px -4px 5px 0px rgba(240, 202, 228, 0.8);
+    box-shadow: 4px -4px 5px 0 rgba(240, 202, 228, 0.8);
     border: white double 3px;
 
 
