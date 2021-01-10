@@ -1,3 +1,3 @@
 # VitalTrainer
-weblink 
-https://verenasworld.github.io/VitalTrainer/
+weblink : https://verenasworld.github.io/VitalTrainer/
+
